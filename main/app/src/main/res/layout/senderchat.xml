@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="right">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#AEEA00"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="5dp"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/sender_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="This is a Message"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:maxWidth="300dp"/>
+            <TextView
+                android:id="@+id/sender_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="June 10"
+                android:textSize="13sp"
+                android:textColor="#696969"
+                android:layout_gravity="bottom"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

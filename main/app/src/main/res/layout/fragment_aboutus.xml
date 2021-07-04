@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2DD7DE"
+    tools:context=".Fragment.Aboutus">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/aboutus" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/gif"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/two" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/profile1"
+                android:fontFamily="@font/bungee"
+                android:text="Adarsh Gyan Rawat"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/two">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/profile2"
+                android:fontFamily="@font/bungee"
+                android:text="Aditya Maheshwari"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dp"
+                android:src="@drawable/one" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/three">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/three" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/profile3"
+                android:fontFamily="@font/bungee"
+                android:text="Chetan Mehta"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/four">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/profile4"
+                android:fontFamily="@font/bungee"
+                android:text="Rahul Nair"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dp"
+                android:src="@drawable/four" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--    <de.hdodenhof.circleimageview.CircleImageView-->
+    <!--        android:id="@+id/profile3"-->
+    <!--        android:layout_width="120dp"-->
+    <!--        android:layout_height="120dp"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginStart="20dp"-->
+    <!--        android:layout_marginLeft="20dp"-->
+    <!--        android:layout_marginTop="350dp"-->
+    <!--        android:layout_marginBottom="261dp"-->
+    <!--        android:src="@drawable/four" />-->
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_marginStart="52dp"-->
+    <!--        android:layout_marginLeft="52dp"-->
+    <!--        android:layout_marginTop="376dp"-->
+    <!--        android:layout_marginEnd="57dp"-->
+    <!--        android:layout_toEndOf="@+id/profile3"-->
+    <!--        android:layout_toRightOf="@+id/profile3"-->
+    <!--        android:text="Chetan Mehta"-->
+    <!--        android:textSize="20sp" />-->
+
+    <!--    <de.hdodenhof.circleimageview.CircleImageView-->
+    <!--        android:id="@+id/profile4"-->
+    <!--        android:layout_width="120dp"-->
+    <!--        android:layout_height="120dp"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginTop="458dp"-->
+    <!--        android:layout_marginEnd="22dp"-->
+    <!--        android:layout_marginBottom="153dp"-->
+    <!--        android:src="@drawable/three" />-->
+
+    <!--    <TextView-->
+    <!--        android:layout_width="152dp"-->
+    <!--        android:layout_height="29dp"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_marginStart="136dp"-->
+    <!--        android:layout_marginLeft="0dp"-->
+    <!--        android:layout_marginTop="520dp"-->
+    <!--        android:layout_marginRight="-86dp"-->
+    <!--        android:layout_toLeftOf="@+id/profile4"-->
+    <!--        android:text="Rahul Nair"-->
+    <!--        android:textSize="20sp" />-->
+
+
+</RelativeLayout>

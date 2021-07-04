@@ -1,0 +1,78 @@
+{
+  "project_info": {
+    "project_number": "173001417470",
+    "firebase_url": "https://studypoint-c78a1-default-rtdb.firebaseio.com",
+    "project_id": "studypoint-c78a1",
+    "storage_bucket": "studypoint-c78a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173001417470:android:b6eab78bfa554353d2bbaf",
+        "android_client_info": {
+          "package_name": "app.aacr.studypoint"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173001417470-qvgdp2lbalvfs7e2pank5knvrk4t2qcj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.aacr.studypoint",
+            "certificate_hash": "d1dee4d84531cbd9465d3602ec7caefc501c3e48"
+          }
+        },
+        {
+          "client_id": "173001417470-agoi36dhmur6urqm30u2gdv6frd3ujik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbY0WBKVLOzmbvfQf0m_6N3wbsbmyw9iY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173001417470-agoi36dhmur6urqm30u2gdv6frd3ujik.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-7452364772685070~8116167044"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173001417470:android:2f18865091fe6e2fd2bbaf",
+        "android_client_info": {
+          "package_name": "com.example.studypointadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173001417470-agoi36dhmur6urqm30u2gdv6frd3ujik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbY0WBKVLOzmbvfQf0m_6N3wbsbmyw9iY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173001417470-agoi36dhmur6urqm30u2gdv6frd3ujik.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

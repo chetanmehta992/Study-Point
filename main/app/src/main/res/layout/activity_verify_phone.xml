@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.VerifyPhoneActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.VerifyPhoneActivity"
+        android:id="@+id/parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginVertical="50dp"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/verification"
+            app:lottie_loop="true"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/lottie"
+            android:layout_marginTop="50dp"
+            android:id="@+id/mobile_number_relative_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91"
+                android:textStyle="bold"
+                android:id="@+id/country_code"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/mobile_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_toRightOf="@+id/country_code"
+                android:text="9999999999"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wrong number?"
+                android:textColor="#2196F3"
+                android:layout_toRightOf="@+id/mobile_number"
+                android:textSize="15dp"
+                android:id="@+id/wrong_number"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/mobile_number_relative_layout"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/relative_layout">
+
+            <com.chaos.view.PinView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/code"
+                style="@style/PinWidget.PinView"
+                android:inputType="number"
+                app:itemRadius="10dp"
+                app:lineColor="#9000B8D4"
+                app:lineWidth="3dp"
+                android:textStyle="bold"
+                app:itemCount="6"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:hint="******"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/code"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="60dp"
+                android:textAlignment="center"
+                android:text="Enter the 6-digit code you receive via SMS.If you didn't receive the 6-digit code by SMS,Wait for 60 sec and retry."
+                />
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative_layout"
+            android:text="verify"
+            android:padding="15dp"
+            android:layout_marginTop="50dp"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_bg"
+            android:id="@+id/verify_code" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/verify_code"
+            android:layout_marginVertical="20dp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:id="@+id/time"
+            android:text="Resend OTP after 60 sec."
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time"
+            android:text="RESEND OTP"
+            android:padding="15dp"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_bg"
+            android:layout_marginBottom="20sp"
+            android:id="@+id/resend_code"/>
+
+    </RelativeLayout>
+</ScrollView>

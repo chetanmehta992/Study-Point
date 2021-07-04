@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/search_bar"
+        android:background="@drawable/round"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:hint="Subject Name"
+        android:layout_margin="15dp"
+        android:drawableRight="@drawable/ic_baseline_search_24"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/search_bar"
+        android:id="@+id/books"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="id_activityscreenTitles">
+
+        <item></item>
+        <item>DashBoard</item>
+        <item>My Profile</item>
+<!--        <item>Nearby Resources</item>-->
+<!--        <item>Settings</item>-->
+        <item>About Us</item>
+        <item>Log out</item>
+    </string-array>
+
+    <array name="id_activityscreenIcon">
+        <item>@drawable/close</item>
+        <item>@drawable/dashboard</item>
+        <item>@drawable/person</item>
+<!--        <item>@drawable/near</item>-->
+<!--        <item>@drawable/settings</item>-->
+        <item>@drawable/info</item>
+        <item>@drawable/ic_outline_login_24</item>
+    </array>
+        <string-array name="document">
+            <item>Book</item>
+            <item>Notes</item>
+            <item>Paper</item>
+        </string-array>
+</resources>
